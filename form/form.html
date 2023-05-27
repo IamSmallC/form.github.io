@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>生態瓶訂單</title>
+        <meta charset="UTF-8">
+
+        <style>
+        body   {background-color: powderblue;}
+        h1     {color: blue;
+                border: 2px solid red;
+                padding: 20px;
+                margin: 20px;}
+        form   {color: green;}
+        </style>
+    </head>
+
+    <body>
+        <h1>生態瓶訂單</h1>
+        <form name="quest">
+        <fieldset>
+        <legend><i>個人資料</i></legend>
+        <label>年齡:<input name="age" type="text" size="4"></label><br>
+        <label>性別:<input name="sex" type="radio" value="male">男
+        <input name="sex" type="radio" value="female">女</label><br>
+        </fieldset>
+        取得產品時間:<input name="time" type="time" value="00:00"><br>
+        偏好產品種類:<br>
+        <input name="有機產品" type="checkbox" value="1">有機產品
+        <input name="化學產品" type="checkbox" value="2">化學產品<br>
+        偏好產品複雜程度:簡單<input name="score" type="range" min="1" max="10">複雜<br>
+        偏好產品外觀色彩:<input name="color" type="color" value="#00ffff"><br>
+        偏好植物種類<select name="plant">
+        <optgroup label="植物類型">
+        <option value="1">水生植物
+        <option value="2">陸生植物
+        </optgroup>
+        </select><br>
+        偏好產品高度<br><select name="exterior" size="5" multipe>
+        <option value="1">10cm
+        <option value="2">15cm
+        <option value="3">20cm
+        <option value="4">25cm
+        <option value="5">更高
+        </select><br>
+        偏好產品寬度<br><select name="exterior" size="5" multipe>
+        <option value="1">10cm
+        <option value="2">15cm
+        <option value="3">20cm
+        <option value="4">25cm
+        <option value="5">更寬
+        </select><br>
+        其他意見:<br><textarea name="comment" rows="5" cols="25"></textarea><br>
+        <input type="reset" value="清除"><br><hr>
+        <input type="submit" value="完成">
+        </form>
+    </body>
+</html>
